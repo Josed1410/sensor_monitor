@@ -11,7 +11,7 @@ class Sensor:
         else:
             return f'Sensor {self.nombre}: NORMAL'
 
-with open('../datos.csv', encoding='utf-8-sig') as file:
+with open('sensor_monitor/datos.csv', encoding='utf-8-sig') as file:
     lines = file.read().splitlines()
     lines.pop(0)
 
